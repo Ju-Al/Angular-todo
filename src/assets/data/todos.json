@@ -1,6 +1,0 @@
-[
-  { "id": 1, "description": "Einkaufen", "dueDate": "2022-09-11" },
-  { "id": 2, "description": "Putzen", "dueDate": "2022-08-31", "doneDate": "2022-09-02"},
-  { "id": 3, "description": "Lernen", "dueDate": "2022-08-13"},
-  { "id": 4, "description": "Tennistraining", "dueDate": "2022-08-15", "doneDate": "2022-08-18"}
-]
