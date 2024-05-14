@@ -1,0 +1,28 @@
+
+<section class="heading-section">
+  <h2 class="detailHeader">ToDo Details</h2>
+</section>
+
+<mat-card class="mat-card">
+  <mat-card-content>
+    <div class="detail-container">
+      <div class="description" *ngIf="toDo?.description">
+        {{ toDo?.description | uppercase }}
+      </div>
+      <div class="dueDate" *ngIf="toDo?.dueDate">Erstellt am:
+        {{toDo?.dueDate| date: 'fullDate'}}
+      </div>
+      <div class="doneDate" *ngIf="toDo?.doneDate">
+        <span class="done-Date-Description">Erfüllt am:</span>
+        {{toDo?.doneDate| date: 'fullDate'}}
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+<div class="button-container">
+  <button mat-mini-fab class="edit-button" (click)="onEdit(toDo!)" type="button">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <button class="delete-button" (click)="onDelete(toDo!.id)" type="button">Delete</button>
+  <button class="back-button" (click)="goBack()" type="button">Back</button>
+</div>
